@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>我的个人主页</title>
+    <link rel="stylesheet" href="个人主页.css" />
+  </head>
+  <body>
+    <!-- 导航栏 -->
+    <nav>
+      <div class="nav-wrap">
+        <div class="nav-logo">个人主页</div>
+        <div class="nav-links">
+          <a href=" ">首页</a>
+          <a href="#about">关于我</a>
+          <a href="#plan">未来规划</a>
+          <a href="#club">俱乐部学习</a>
+        </div>
+        <button id="themeBtn">切换主题</button>
+      </div>
+    </nav>
+
+    <!-- Hero区域 -->
+    <section id="hero" class="hero">
+      <img
+        class="avatar"
+        src="http://qpic.y.qq.com/music_cover/GUalk7A0sBGvkxmUrXIf7KnEVGJFicuoT7xSkZLHiaEMB5Ojbccf6cbA/300?n=1"
+        alt="头像"
+      />
+      <h1>欧阳化羽</h1>
+      <p>座右铭|热爱编程，持续学习</p>
+    </section>
+
+    <!-- 关于我 Tab -->
+    <section id="about" class="container">
+      <h2>关于我</h2>
+      <div class="card">
+        <div class="tab-header">
+          <button class="tab-btn active" data-tab="base">基础信息</button>
+          <button class="tab-btn" data-tab="hobby">兴趣&特点</button>
+          <button class="tab-btn" data-tab="skill">技能&经历</button>
+        </div>
+        <div class="tab-content show" id="base">
+          <p><strong>姓名：</strong>欧阳化羽</p>
+          <p><strong>年级专业：</strong>软件工程（产业计划）2501班</p>
+          <p><strong>QQ：</strong>939777203</p>
+        </div>
+        <div class="tab-content" id="hobby">
+          <p><strong>兴趣爱好：</strong>编程、阅读、听音乐、思考一些逻辑问题</p>
+          <p>
+            <strong>个人特点：</strong
+            >喜欢刨根问底，重视底层原理，做事严谨，愿意反复打磨项目
+          </p>
+        </div>
+        <div class="tab-content" id="skill">
+          <p>
+            <strong>技能基础：</strong
+            >C++基础、HTML/CSS/JS前端基础、Python基础、深度学习基础
+          </p>
+          <p>
+            <strong>经历或作品：</strong
+            >课堂练习小项目，练习网页开发，算法基础练习
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 未来规划时间轴 -->
+    <section id="plan" class="container">
+      <h2>未来规划</h2>
+      <div class="card">
+        <div class="fold-header">
+          <h3>发展方向与原因</h3>
+          <span class="fold-icon">▼</span>
+        </div>
+        <div class="fold-body">
+          <p><strong>未来倾向方向：</strong>就业</p>
+          <p>
+            <strong>选择原因：</strong
+            >软件工程偏向工程实践，希望积累真实项目经验，进入行业从事开发岗位，在实战中提升技术能力。
+          </p>
+          <p>
+            <strong>阶段目标：</strong
+            >夯实计算机基础，掌握前后端开发能力，积累项目作品，提升算法能力，为求职做准备。
+          </p>
+        </div>
+
+        <div class="fold-header">
+          <h3>行动计划</h3>
+          <span class="fold-icon">▼</span>
+        </div>
+        <div class="fold-body">
+          <ul>
+            <li>1. 每周固定时间练习编程，巩固C++与Web前端技术</li>
+            <li>2. 坚持学习计算机基础课程：深度学习、数据结构、Web前端</li>
+            <li>3. 积极参与社团实践、课程项目，争取产出可展示的个人作品</li>
+          </ul>
+        </div>
+
+        <h3 style="margin-top: 2rem">时间轴</h3>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h4>大一阶段</h4>
+            <p>打好编程基础，熟悉C++，python等语言，完成课程学习</p>
+          </div>
+          <div class="timeline-item">
+            <h4>大二阶段</h4>
+            <p>
+              加入俱乐部，深入前后端，学习数据库，做完整项目，刷算法题，尝试竞赛
+            </p>
+          </div>
+          <div class="timeline-item">
+            <h4>大三阶段</h4>
+            <p>完善作品集，寻找实习机会，强化工程能力</p>
+          </div>
+          <div class="timeline-item">
+            <h4>大四阶段</h4>
+            <p>实习，准备求职，完成校招就业目标</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 俱乐部学习目标 -->
+    <section id="club" class="container">
+      <h2>俱乐部学习目标</h2>
+      <div class="card">
+        <div class="fold-header">
+          <h3>想要学习内容</h3>
+          <span class="fold-icon">▼</span>
+        </div>
+        <div class="fold-body">
+          <p>Web前端、后端、数据库、算法、项目协作、竞赛</p>
+        </div>
+
+        <div class="fold-header">
+          <h3>具体学习目标</h3>
+          <span class="fold-icon">▼</span>
+        </div>
+        <div class="fold-body">
+          <ul>
+            <li>
+              1. 熟练掌握前端技术栈，能够独立完成响应式网页项目，理解JS底层原理
+            </li>
+            <li>
+              2.
+              掌握后端与数据库基础，能够完成简单全栈小项目，学会团队项目协作开发流程
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 欧阳化羽|个人主页</p>
+    </footer>
+    <button id="backTop">↑</button>
+    <script src="个人主页.js"></script>
+  </body>
+</html>
